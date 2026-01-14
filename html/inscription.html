@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inf'octogone - Inscription</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="logo">INF'<span class="text-red">OCTOGONE</span></a>
+        <ul class="nav-links">
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="presentation.html">L'Événement</a></li>
+            <li><a href="partenaires.html">Partenaires</a></li>
+            <li><a href="inscription.html" class="btn-nav active">Inscription</a></li>
+        </ul>
+    </nav>
+
+    <div class="container main-content">
+        <h1 style="text-align: center; margin-bottom: 30px;">REJOINDRE <span class="text-red">L'AVENTURE</span></h1>
+        
+        <form>
+            <div class="form-group">
+                <label>Nom & Prénom</label>
+                <input type="text" placeholder="Ex: Doe John" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Année d'étude</label>
+                <select>
+                    <option>BUT 1</option>
+                    <option>BUT 2</option>
+                    <option>BUT 3</option>
+                    <option>Je ne suis pas étudiant ici</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Je souhaite participer en tant que :</label>
+                <select required>
+                    <option value="" disabled selected>-- Choisir une option --</option>
+                    <option value="dev-site">Compétiteur DEV - Équipe Site Web</option>
+                    <option value="dev-jeu">Compétiteur DEV - Équipe Mini-Jeu</option>
+                    <option value="cyber">Compétiteur CYBER - Hackathon</option>
+                    <option value="orga">Bénévole</option>
+                    <option value="visiteur">Simple spectateur</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Message ou question (optionnel)</label>
+                <textarea rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="btn-cta" style="width: 100%; border: none; cursor: pointer;">VALIDER L'INSCRIPTION</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Inf'octogone - Projet SAE 1.05</p>
+    </footer>
+</body>
+</html>
