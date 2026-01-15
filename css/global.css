@@ -125,11 +125,37 @@ input, select, textarea {
 }
 
 /* Footer */
-footer { text-align: center; padding: 20px; background: #000; border-top: 1px solid #333; margin-top: auto; }
+footer { text-align: center;
+    padding: 20px;
+    background: #000;
+    border-top: 1px solid #333;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.amu-logo-footer {
+    height: 50px;
+    width: auto;
+    border-radius: 5px;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 /* Responsive general */
 @media (max-width: 768px) {
     .main-title { font-size: 2.5rem; }
     .event-grid { grid-template-columns: 1fr; }
     .hero { background-position: left center; }
+    footer { flex-direction: column; }
+
+    .amu-logo-footer {
+        position: static;
+        transform: none;
+        margin-top: 20px;
+    }
 }
